@@ -28,6 +28,7 @@
 | `iso-c-9899-2024` | ISO/IEC 9899:2024 — C23 (N3220 draft) | what the standard requires/permits; undefined/unspecified behavior; C23 features; integer promotions; the memory model |
 | `iso-cpp-2023` | ISO/IEC 14882 — C++23 (N4950 draft) | well-formed vs UB/IFNDR; value categories & move semantics; concepts/ranges/coroutines; overload resolution; the memory model |
 | `cuda-programming` | NVIDIA CUDA Programming Guide, Release 13.3 | CUDA C++/Python kernels, SIMT/tile, streams, graphs, unified memory, multi-GPU |
+| `gpu-multithreading` | Cross-technology parallel-programming playbook — design, performance laws, optimization | choosing a decomposition (PCAM); Amdahl/Gustafson/roofline; threads/MPI/CUDA/OpenMP/OpenCL/Thrust; load balancing; diagnosing parallel pitfalls |
 
 Each skill lives self-contained under `skills/<name>/`: a `SKILL.md` entry point, on-demand `chapters/`, and supporting `glossary.md` · `patterns.md` · `cheatsheet.md`.
 
