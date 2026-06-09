@@ -29,6 +29,7 @@
 | `iso-cpp-2023` | ISO/IEC 14882 — C++23 (N4950 draft) | well-formed vs UB/IFNDR; value categories & move semantics; concepts/ranges/coroutines; overload resolution; the memory model |
 | `cuda-programming` | NVIDIA CUDA Programming Guide, Release 13.3 | CUDA C++/Python kernels, SIMT/tile, streams, graphs, unified memory, multi-GPU |
 | `gpu-multithreading` | Cross-technology parallel-programming playbook — design, performance laws, optimization | choosing a decomposition (PCAM); Amdahl/Gustafson/roofline; threads/MPI/CUDA/OpenMP/OpenCL/Thrust; load balancing; diagnosing parallel pitfalls |
+| `python-hpc` | Python performance-engineering playbook — CPU and GPU | profiling (cProfile/Scalene/py-spy); NumPy vectorization; compiling (Numba/Cython, the GIL); concurrency (asyncio/multiprocessing/Dask); Polars; Numba-CUDA/CuPy/RAPIDS/JAX |
 
 Each skill lives self-contained under `skills/<name>/`: a `SKILL.md` entry point, on-demand `chapters/`, and supporting `glossary.md` · `patterns.md` · `cheatsheet.md`.
 
