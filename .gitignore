@@ -1,0 +1,11 @@
+# Editor / OS cruft
+*~
+*.swp
+.DS_Store
+
+# Never commit nested VCS dirs from exported skills
+skills/**/.git/
+
+# Python/venv (in case a skill ever ships one — none should here)
+__pycache__/
+.venv/
