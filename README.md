@@ -26,13 +26,14 @@
 | `openacc-3.4` | OpenACC API v3.4 | `!$acc` directives, data clauses, gang/worker/vector, async queues |
 | `fortran-2023-standard` | Fortran 2023 (J3/23-007r1) | what the standard requires/permits; modern-Fortran features; `Cxxx` constraints; conformance |
 | `iso-c-9899-2024` | ISO/IEC 9899:2024 — C23 (N3220 draft) | what the standard requires/permits; undefined/unspecified behavior; C23 features; integer promotions; the memory model |
+| `iso-cpp-2023` | ISO/IEC 14882 — C++23 (N4950 draft) | well-formed vs UB/IFNDR; value categories & move semantics; concepts/ranges/coroutines; overload resolution; the memory model |
 | `cuda-programming` | NVIDIA CUDA Programming Guide, Release 13.3 | CUDA C++/Python kernels, SIMT/tile, streams, graphs, unified memory, multi-GPU |
 
 Each skill lives self-contained under `skills/<name>/`: a `SKILL.md` entry point, on-demand `chapters/`, and supporting `glossary.md` · `patterns.md` · `cheatsheet.md`.
 
 ## What they're for
 
-These exist to make the agent a competent pair for *real* HPC work. They were forged alongside [ADAM](https://github.com/szaghi/adam) — a multi-physics AMR SDK for high-performance computing, from laptop to exascale device-accelerated supercomputer — where "is this standard-conforming Fortran or C?" and "what's the right MPI / OpenACC / CUDA incantation?" are daily questions. Point the agent at a kernel and it can check the actual rule instead of guessing.
+These exist to make the agent a competent pair for *real* HPC work. They were forged alongside [ADAM](https://github.com/szaghi/adam) — a multi-physics AMR SDK for high-performance computing, from laptop to exascale device-accelerated supercomputer — where "is this standard-conforming Fortran, C, or C++?" and "what's the right MPI / OpenACC / CUDA incantation?" are daily questions. Point the agent at a kernel and it can check the actual rule instead of guessing.
 
 ## Install
 
