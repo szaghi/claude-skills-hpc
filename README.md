@@ -8,12 +8,12 @@
 [![Install](https://img.shields.io/badge/install-copy%20%7C%20one%20script-green.svg)](#install)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey.svg)](#copyrights)
 
-| 📚 **Spec-grounded answers**<br>Each skill distills a full standard into frameworks, decision tables, and worked examples — the agent reads the chapter before answering, instead of hallucinating a flag | 🧭 **Navigable, not a brain-dump**<br>A `SKILL.md` entry point + topic index routes to on-demand `chapters/`; only the relevant chapter is loaded, so context stays cheap | 🔬 **Conformance-first**<br>Built for "what does the *standard* actually require?" — constraint IDs, version deltas, send-mode semantics, data-clause rules, not folklore | 🛠️ **Synthesis, not a copy**<br>Original explanatory prose; only API names, code, and numeric spec values coincide with the source — each skill ships a `NOTICE` |
+| 📚 **Spec-grounded answers**<br>Each skill distills a full standard — or a practitioner's playbook — into frameworks, decision tables, and worked examples; the agent reads the chapter before answering, instead of hallucinating a flag | 🧭 **Navigable, not a brain-dump**<br>A `SKILL.md` entry point + topic index routes to on-demand `chapters/`; only the relevant chapter is loaded, so context stays cheap | 🔬 **Conformance- and craft-first**<br>For "what does the *standard* actually require?" — constraint IDs, version deltas, send-mode semantics — and for "what's the *right* way to build this?" — decomposition, roofline, the parallel-pitfall catalogue | 🛠️ **Synthesis, not a copy**<br>Original explanatory prose; only API names, code, and numeric spec values coincide with the source — each skill ships a `NOTICE` |
 |:---:|:---:|:---:|:---:|
-| ⚡ **Drop-in for Claude Code**<br>One `./install.sh` copies them into `~/.claude/skills/`; restart and they trigger automatically on the right questions | 🤝 **Plays nice with dotfiles**<br>Skips any skill you already manage via symlink/stow — won't clobber an existing managed setup | 📦 **Core HPC standards**<br>Message passing, shared-memory and accelerator offload, languages — see the full list below, expanding over time | 🆓 **Free & open**<br>CC-BY-4.0 on the original content — share and adapt with attribution |
+| ⚡ **Drop-in for Claude Code**<br>One `./install.sh` copies them into `~/.claude/skills/`; restart and they trigger automatically on the right questions | 🤝 **Plays nice with dotfiles**<br>Skips any skill you already manage via symlink/stow — won't clobber an existing managed setup | 📦 **Standards + playbooks**<br>The core HPC standards (message passing, offload, languages) plus cross-cutting practitioner playbooks (parallel design, numerics, cluster tooling) — see the full list below, expanding over time | 🆓 **Free & open**<br>CC-BY-4.0 on the original content — share and adapt with attribution |
 
 >#### Built with [book-to-skill](https://github.com/virgiliojr94/book-to-skill)
-> These skills are generated, not hand-typed: [book-to-skill](https://github.com/virgiliojr94/book-to-skill) reads a specification and extracts its structure — named frameworks, API semantics, anti-patterns, worked examples — into a navigable skill.
+> These skills are generated, not hand-typed: [book-to-skill](https://github.com/virgiliojr94/book-to-skill) reads a specification or a technical book and extracts its structure — named frameworks, API semantics, anti-patterns, worked examples — into a navigable skill.
 
 ---
 
@@ -31,6 +31,8 @@
 | `gpu-multithreading` | Cross-technology parallel-programming playbook — design, performance laws, optimization | choosing a decomposition (PCAM); Amdahl/Gustafson/roofline; threads/MPI/CUDA/OpenMP/OpenCL/Thrust; load balancing; diagnosing parallel pitfalls |
 | `python-hpc` | Python performance-engineering playbook — CPU and GPU | profiling (cProfile/Scalene/py-spy); NumPy vectorization; compiling (Numba/Cython, the GIL); concurrency (asyncio/multiprocessing/Dask); Polars; Numba-CUDA/CuPy/RAPIDS/JAX |
 | `cpp-hpc` | C++ HPC playbook — toolchain, idioms, parallel models, ecosystem | CMake/Spack/SLURM; modern C++ & the STL; parallel-STL/OpenMP/MPI/CUDA; Kokkos portability; HPC hardware & roofline; parallel I/O (HDF5/MPI-IO); debugging/profiling; BLAS/LAPACK/PETSc |
+| `hpc-cluster-tooling` | Cluster workflow & command-line tooling playbook | Unix shell for HPC; Make & CMake; git discipline; GDB & sanitizers/Valgrind; profiling (gprof/perf/PAPI/TAU); SLURM batch jobs (sbatch/squeue, arrays, dependencies) |
+| `hpc-numerics` | Numerical & algorithmic theory of scientific computing | floating-point/round-off & stability; ODE/PDE discretization & CFL; numerical linear algebra & Krylov/multigrid solvers; roofline & cache blocking; N-body & Monte Carlo |
 
 Each skill lives self-contained under `skills/<name>/`: a `SKILL.md` entry point, on-demand `chapters/`, and supporting `glossary.md` · `patterns.md` · `cheatsheet.md`.
 
