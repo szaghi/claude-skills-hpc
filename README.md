@@ -25,13 +25,14 @@
 | `openmp-6.0` | OpenMP API v6.0 (+ Nov-2025 errata) | directives/clauses, tasking, device offload, the flush memory model |
 | `openacc-3.4` | OpenACC API v3.4 | `!$acc` directives, data clauses, gang/worker/vector, async queues |
 | `fortran-2023-standard` | Fortran 2023 (J3/23-007r1) | what the standard requires/permits; modern-Fortran features; `Cxxx` constraints; conformance |
+| `iso-c-9899-2024` | ISO/IEC 9899:2024 — C23 (N3220 draft) | what the standard requires/permits; undefined/unspecified behavior; C23 features; integer promotions; the memory model |
 | `cuda-programming` | NVIDIA CUDA Programming Guide, Release 13.3 | CUDA C++/Python kernels, SIMT/tile, streams, graphs, unified memory, multi-GPU |
 
 Each skill lives self-contained under `skills/<name>/`: a `SKILL.md` entry point, on-demand `chapters/`, and supporting `glossary.md` · `patterns.md` · `cheatsheet.md`.
 
 ## What they're for
 
-These exist to make the agent a competent pair for *real* HPC work. They were forged alongside [ADAM](https://github.com/szaghi/adam) — a multi-physics AMR SDK for high-performance computing, from laptop to exascale device-accelerated supercomputer — where "is this standard-conforming?" and "what's the right MPI / OpenACC / CUDA incantation?" are daily questions. Point the agent at a kernel and it can check the actual rule instead of guessing.
+These exist to make the agent a competent pair for *real* HPC work. They were forged alongside [ADAM](https://github.com/szaghi/adam) — a multi-physics AMR SDK for high-performance computing, from laptop to exascale device-accelerated supercomputer — where "is this standard-conforming Fortran or C?" and "what's the right MPI / OpenACC / CUDA incantation?" are daily questions. Point the agent at a kernel and it can check the actual rule instead of guessing.
 
 ## Install
 
