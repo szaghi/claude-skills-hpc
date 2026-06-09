@@ -30,6 +30,7 @@
 | `cuda-programming` | NVIDIA CUDA Programming Guide, Release 13.3 | CUDA C++/Python kernels, SIMT/tile, streams, graphs, unified memory, multi-GPU |
 | `gpu-multithreading` | Cross-technology parallel-programming playbook — design, performance laws, optimization | choosing a decomposition (PCAM); Amdahl/Gustafson/roofline; threads/MPI/CUDA/OpenMP/OpenCL/Thrust; load balancing; diagnosing parallel pitfalls |
 | `python-hpc` | Python performance-engineering playbook — CPU and GPU | profiling (cProfile/Scalene/py-spy); NumPy vectorization; compiling (Numba/Cython, the GIL); concurrency (asyncio/multiprocessing/Dask); Polars; Numba-CUDA/CuPy/RAPIDS/JAX |
+| `cpp-hpc` | C++ HPC playbook — toolchain, idioms, parallel models, ecosystem | CMake/Spack/SLURM; modern C++ & the STL; parallel-STL/OpenMP/MPI/CUDA; Kokkos portability; HPC hardware & roofline; parallel I/O (HDF5/MPI-IO); debugging/profiling; BLAS/LAPACK/PETSc |
 
 Each skill lives self-contained under `skills/<name>/`: a `SKILL.md` entry point, on-demand `chapters/`, and supporting `glossary.md` · `patterns.md` · `cheatsheet.md`.
 
