@@ -19,6 +19,8 @@
 
 ## Skills
 
+> **`hpc-index`** is the router, not a knowledge base: a thin navigation layer that decides *which* of the skills below to consult when a question plausibly spans several (reference vs. applied vs. theory). It kicks in only when the target is ambiguous — a query that already names one technology routes straight to that skill.
+
 | Skill | Distils | Reach for it when… |
 |-------|---------|--------------------|
 | `mpi-5.0` | MPI: A Message-Passing Interface Standard, v5.0 | message passing, collectives, RMA, MPI-IO, datatype matching, deadlock hunts |
